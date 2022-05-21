@@ -13,23 +13,27 @@ let Butt = document.getElementById("changeColor");
 function getNewInfo() {
     //Creates a new tab
     //window.open('http://google.com','_newtab') 
-    // const userAction = async () => {
-    //     const response = await fetch("https://kitsu.io/api/edge/anime");
-    //     const myJson = await response.json;
-    // }
+    
+    fetch("https://kitsu.io/api/edge/anime")
+        .then(response => {
+            console.log("this fetch was called")
+            console.log(response.json())
+            //return response.json()  
+    })
 
     //console.log(myJson)
     console.log("SampleTextHere")
 }
 
 // Fetching Random Results From API //
+// fetch("https://kitsu.io/api/edge/anime")
+//         .then(response => {
+//             console.log("this fetch was called")
+//             console.log(response.json())
+//             //return response.json()  
+//     })
 
-fetch("https://kitsu.io/api/edge/anime")
-    .then(response => {
-        console.log("this fetch was called")
-        console.log(response.json())
-        //return response.json()  
-    })
+
    
 
 
