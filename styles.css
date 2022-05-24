@@ -1,4 +1,48 @@
-body{
-    width: 1000px;
-    height: 100px;
+/* Basic Pop-up Details */
+body{    
+    width: 200px;  
+    min-height: 100px;
+    max-height: 499px;
+    padding: 10px;
+    background-color: rgb(134, 130, 130);
 }
+/* Basic Button */
+button {
+    background: none;
+    color: inherit;
+    border: none;
+    padding: 0;
+    font: inherit;
+    cursor: pointer;
+    outline: inherit;
+}
+.buttons {
+    display: flex;
+      justify-content: center;
+      align-items: center;
+      
+}
+
+.buttons button{
+    background-color: aqua;
+    padding: 10px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 5px;
+    
+}
+
+#add{
+    height: 50px;
+    width: 51px;
+    border-radius: 50%;
+    background-color: rgb(85, 152, 184);
+    color: white;
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+
+}
+
+
+
